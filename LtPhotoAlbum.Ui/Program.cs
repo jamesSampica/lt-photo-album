@@ -31,7 +31,7 @@ app.MapGet("/{id?}", async (HttpContext context, IHttpClientFactory clientFactor
            </html>
            """;
 
-    static string PhotoDisplay(Photo p) => $"<div style='display:inline-block;text-align:center;'><img src='{p.ThumbnailUrl}' /><br/> [{p.Id}] {p.Title}</div>";
+    static string PhotoDisplay(Photo p) => $"<div style='margin-top:10px;'><img src='{p.ThumbnailUrl}' /><br/> [{p.Id}] {p.Title}</div>";
 });
 
 await app.RunAsync();
