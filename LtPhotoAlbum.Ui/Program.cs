@@ -25,13 +25,13 @@ app.MapGet("/{id?}", async (HttpContext context, IHttpClientFactory clientFactor
             <body>
                 <a data-testid='luckyBtn' href="/" onclick="this.href = '/' + Math.trunc(Math.random() * 100 + 1);">I'm feeling lucky...</a><br>
                 <div data-testid='photo' style="margin-top:10px">
-                    {string.Join("<br>", photos.Select(PhotoDisplay))}
+                    {string.Join(" ", photos.Select(PhotoDisplay))}
                 </div>  
             </body>
            </html>
            """;
 
-    static string PhotoDisplay(Photo p) => $"[{p.Id}] {p.Title} <img src='{p.ThumbnailUrl}' />";
+    static string PhotoDisplay(Photo p) => $"<div style='display:inline-block;text-align:center;'><img src='{p.ThumbnailUrl}' /><br/> [{p.Id}] {p.Title}</div>";
 });
 
 await app.RunAsync();
