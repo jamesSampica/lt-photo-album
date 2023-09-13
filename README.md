@@ -1,5 +1,7 @@
 A minimalist web interface consuming a JSON api over HTTP.
 
+Hosted at: [https://lt-photo-album.azurewebsites.net](https://lt-photo-album.azurewebsites.net)
+
 # Prerequisites
 
 Please install the appropriate [.NET 7.0 SDK](https://dotnet.microsoft.com/en-us/download/visual-studio-sdks)
