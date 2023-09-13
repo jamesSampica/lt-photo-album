@@ -23,7 +23,7 @@ app.MapGet("/{id?}", async (HttpContext context, IHttpClientFactory clientFactor
            <!DOCTYPE html>
            <html>
             <body>
-                <a data-testid='luckyBtn' href="/" onclick="this.href = '/' + Math.trunc(Math.random() * 100 + 1);">I'm feeling lucky...</a><br>
+                <a data-testid='luckyBtn' href="/" onclick="this.href = '/' + Math.trunc(Math.random() * 100 + 1);">Press Me :)</a><br>
                 <div data-testid='photo' style="margin-top:10px">
                     {string.Join(" ", photos.Select(PhotoDisplay))}
                 </div>  
