@@ -1,4 +1,8 @@
-A minimalist web project consuming a JSON api over HTTP.
+A minimalist web interface consuming a JSON api over HTTP.
+
+# Prerequisites
+
+Please install the appropriate [.NET 7.0 SDK](https://dotnet.microsoft.com/en-us/download/visual-studio-sdks)
 
 # Running tests
 
