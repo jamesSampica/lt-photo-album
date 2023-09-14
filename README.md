@@ -1,4 +1,4 @@
-A minimalist web interface consuming a JSON api over HTTP.
+A minimalist web interface consuming a JSON API over HTTP.
 
 Hosted at: [https://lt-photo-album.azurewebsites.net](https://lt-photo-album.azurewebsites.net)
 
